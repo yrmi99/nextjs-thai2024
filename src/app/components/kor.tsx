@@ -40,7 +40,7 @@ export default function Kor() {
       </div>
 
       <div className="w-full border border-b-[#B3A369] border-t-[#B3A369] border-l-transparent border-r-transparent flex justify-between">
-        <span>선교 모금 편지</span>
+        <span>선교 기도 편지</span>
         <span>{currentDate}</span>
       </div>
 
