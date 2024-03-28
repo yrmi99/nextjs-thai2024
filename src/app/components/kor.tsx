@@ -33,8 +33,8 @@ export default function Kor() {
           <Image
             src="/animationheader-ezgif.com-crop.gif"
             alt="header image"
-            width={0}
-            height={0}
+            width={500}
+            height={200}
             layout="responsive"
             className="w-full h-auto"
           />
@@ -68,7 +68,7 @@ export default function Kor() {
         <span className="font-bold">방법</span><br></br>
         <span>저희는 라자밧 대학교와 우동타니 농업 기술 대학에서 영어 학교를 운영하며 전도할 예정입니다.
             3주차에는 학생들의 흥미와 호응을 불러일으켰던 무언극과 찬양, 케이팝 무대 등을 선보일 
-            Friend’s Night이라는 전도 집회를 열 계획입니다.</span>
+            &apos;Friend’s Night&apos;이라는 전도 집회를 열 계획입니다.</span>
       </div>
 
       <div className="mt-2">
@@ -107,25 +107,25 @@ export default function Kor() {
         </ol>
       </div>
 
-      <div className="mt-12">
+      <div className="mt-6 sm:mt-12">
         <div className="flex justify-center">
-          <span className="font-bold">기부로 제 선교를 지원해주세요!</span>
+          <span className="font-bold text-sm sm:text-base">기부로 제 선교를 지원해주세요!</span>
         </div>
         
-        <div className="flex justify-center mt-2">
-          <div className="mr-8 text-[0.5rem] flex flex-col text-center">
+        <div className="flex flex-col sm:flex-row justify-center mt-4 sm:mt-6"> {/* Increased margin top */}
+          <div className="mr-0 sm:mr-8 text-[0.5rem] sm:text-sm flex flex-col items-center sm:text-center">
             <span className="text-xs">Click me!</span>
             <a href="https://give.smglobal.org/atlanta/">
               <Image src="/qr code.png" alt="QR Code" width={150} height={150} layout="fixed" />
             </a>
-            <span className="">웹사이트로 이동됩니다.<br></br><br></br></span>
+            <span className="text-xs mt-2">해당 웹사이트로 이동됩니다.</span>
           </div>
 
-          <div className="text-[0.5rem]">
-            <span className="text-xs"><br></br>         기부 방법</span>
+          <div className="text-[0.5rem] sm:text-sm mt-4 sm:mt-0"> {/* Increased margin top */}
+            <span className="text-xs"><b></b><b></b>기부 방법</span>
             <ol className="text-xs list-decimal list-inside mt-2 ml-5">
               <li>후원하기 클릭!</li>
-              <li>기부 금액 명시 후, Purpose에서 `&apos;`SM24 (ATL01 - THA) Seo, Yeoram`&apos;` 클릭 (하단 2번째) </li>
+              <li>기부 금액 명시 후, Purpose에서 'SM24 (ATL01 - THA) Seo, Yeoram' 클릭 (하단 2번째)</li>
               <li>안내에 따라 개인정보 작성</li>
               <li>신용카드로 결제 혹은 미국 은행 계좌로 송금</li>
               <li>Donate Now 클릭하면 기부 완료!</li>
@@ -134,54 +134,57 @@ export default function Kor() {
         </div>
       </div>
 
-      <div className="flex justify-center">
-        <div className="flex items-center">
-          <Image
-            src="/KakaoTalk_20240327_202316980_08.jpg"
-            alt="Previous mission picture1"
-            width={165}
-            height={165}
-            layout="fixed"
-          />
-          <Image
-            src="/KakaoTalk_20240327_202316980_14.jpg"
-            alt="Previous mission picture1"
-            width={165}
-            height={165}
-            layout="fixed"
-            style={{ marginLeft: "-10px" }}
-          />
-          <Image
-            src="/KakaoTalk_20240327_202316980_02.jpg"
-            alt="Previous mission picture1"
-            width={165}
-            height={165}
-            layout="fixed"
-            style={{ marginLeft: "-10px" }}
-          />
-          <Image
-            src="/KakaoTalk_20240327_202316980_10.jpg"
-            alt="Previous mission picture1"
-            width={165}
-            height={165}
-            layout="fixed"
-            style={{ marginLeft: "-10px" }}
-          />
-          <Image
-            src="/KakaoTalk_20240327_202316980_12.jpg"
-            alt="Previous mission picture1"
-            width={165}
-            height={165}
-            layout="fixed"
-            style={{ marginLeft: "-10px" }}
-          />
-          <Image
-            src="/KakaoTalk_20240327_202316980.jpg"
-            alt="Previous mission picture1"
-            width={180} 
-            height={180}
-            layout="fixed"
-          />
+      <div className="mt-6"> {/* Increased margin top */}
+        <div className="flex justify-center overflow-x-auto">
+          <div className="flex items-center">
+            <Image
+              src="/KakaoTalk_20240327_202316980_08.jpg"
+              alt="Previous mission picture1"
+              width={160}
+              height={160}
+              layout="fixed"
+            />
+            <Image
+              src="/KakaoTalk_20240327_202316980_14.jpg"
+              alt="Previous mission picture1"
+              width={160}
+              height={160}
+              layout="fixed"
+              className="ml-4 sm:ml-0"
+            />
+            <Image
+              src="/KakaoTalk_20240327_202316980_02.jpg"
+              alt="Previous mission picture1"
+              width={160}
+              height={160}
+              layout="fixed"
+              className="ml-4 sm:ml-0"
+            />
+            <Image
+              src="/KakaoTalk_20240327_202316980_10.jpg"
+              alt="Previous mission picture1"
+              width={160}
+              height={160}
+              layout="fixed"
+              className="ml-4 sm:ml-0"
+            />
+            <Image
+              src="/KakaoTalk_20240327_202316980_12.jpg"
+              alt="Previous mission picture1"
+              width={160}
+              height={160}
+              layout="fixed"
+              className="ml-4 sm:ml-0"
+            />
+            <Image
+              src="/KakaoTalk_20240327_202316980.jpg"
+              alt="Previous mission picture1"
+              width={160}
+              height={160}
+              layout="fixed"
+              className="ml-4 sm:ml-0"
+            />
+          </div>
         </div>
       </div>
     </div>

@@ -52,8 +52,8 @@ export default function Eng() {
           <Image
             src="/animationheader-ezgif.com-crop.gif"
             alt="header image"
-            width={0}
-            height={0}
+            width={500}
+            height={200}
             layout="responsive"
             className="w-full h-auto"
           />
@@ -133,28 +133,28 @@ export default function Eng() {
         </ol>
       </div>
 
-      <div className="mt-12">
+      <div className="mt-8 sm:mt-12">
         <div className="flex justify-center">
-          <span className="font-bold">Please support my mission by donating!</span>
+          <span className="font-bold text-sm sm:text-base">Please support my mission by donating!</span>
         </div>
         
-        <div className="flex justify-center mt-2">
-          <div className="mr-8 text-[0.5rem] flex flex-col text-center">
-            <span className="text-xs">Click me!</span>
+        <div className="flex flex-col justify-center items-center mt-2 sm:flex-row sm:justify-center">
+          <div className="mr-0 mb-4 sm:mr-8 text-[0.5rem] sm:text-xs flex flex-col items-center sm:text-center">
+            <span className="text-xs sm:text-sm">Click me!</span>
             <a href="https://give.smglobal.org/atlanta/">
               <Image src="/qr code.png" alt="QR Code" width={150} height={150} layout="fixed" />
             </a>
-            <span className="">Will redirect you to the official website.<br></br><br></br></span>
+            <span className="text-xs xs:text-xs mt-1">Will direct you to the official website.</span>
           </div>
 
-          <div className="text-[0.5rem]">
-            <span className="text-xs"><br></br>         How to Donate</span>
-            <ol className="text-xs list-decimal list-inside mt-2 ml-5">
-              <li>Click &apos;GIVE TO THAILAND MISSION&apos;</li>
-              <li>Specify the giving amount and choose &apos;SM24 (ATL01 - THA) Seo, Yeoram&apos; (2nd to the last) on Purpose </li>
-              <li>Write down personal informations following the guidance</li>
+          <div className="text-[0.5rem] sm:text-xs">
+            <span className="text-xs sm:text-sm">How to Donate</span>
+            <ol className="text-xs xs:text-xs list-decimal list-inside mt-2 ml-0 sm:ml-5">
+              <li>Click 'GIVE TO THAILAND MISSION'</li>
+              <li>Specify the giving amount and choose 'SM24 (ATL01 - THA) Seo, Yeoram' (2nd to the last) on Purpose</li>
+              <li>Write down personal information</li>
               <li>Donate via credit card or send money directly from your bank account</li>
-              <li>Click &apos;Donate Now&apos; and you will be done!</li>
+              <li>Click 'Donate Now' and you will be done!</li>
             </ol>
           </div>
         </div>
