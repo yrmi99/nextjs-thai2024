@@ -122,7 +122,7 @@ export default function Kor() {
 
         <div className="m-auto w-3/5 flex justify-around landscape:flex-row portrait:flex-col">
           <div className="mt-2 text-[0.5rem] flex flex-col items-center">
-            <span className="text-sm mt-2em">Zelle로 계좌 송금</span>
+            <span className="text-sm mt-3em">Zelle로 계좌 송금</span>
             <span className="text-xs mt-2em">Click me!</span>
             <a href="https://enroll.zellepay.com/qr-codes?data=eyJuYW1lIjoiWUVPUkFNIiwiYWN0aW9uIjoicGF5bWVudCIsInRva2VuIjoieXJzaTI5MzgyQGdtYWlsLmNvbSJ9">
               <Image src="/zelleqr.jpg" alt="QR Code, Zelle" width={150} height={150} layout="fixed" />
@@ -133,7 +133,7 @@ export default function Kor() {
 
         <div className="m-auto w-full sm:w-3/5 flex justify-center landscape:flex-row portrait:flex-col"> 
   <div className="mt-2 text-[0.5rem] sm:text-xs flex flex-col items-center">
-    <span className="text-xs xs:text-xs">한국 계좌 송금: 씨티 2033824526701</span>
+    <span className="text-sm sm:text-sm mt-3em">한국 계좌 송금: 씨티 2033824526701</span>
   </div>
 </div>
         

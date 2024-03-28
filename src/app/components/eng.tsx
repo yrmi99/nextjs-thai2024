@@ -147,7 +147,7 @@ export default function Eng() {
         </div>
         <div className="flex justify-center">
           <span className="font-medium text-xs xs:text-base text-center">Target fundraising amount is $4,800. 
-          I sincerely appreciate your holy giving.</span>
+          Please join me in the journey of glorifying God.</span>
         </div>
 
         <div className="m-auto w-3/5 flex justify-around landscape:flex-row portrait:flex-col">
