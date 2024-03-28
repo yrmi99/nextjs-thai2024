@@ -131,9 +131,9 @@ export default function Kor() {
           </div>
         </div>
 
-        <div className="m-auto w-3/5 flex justify-around landscape:flex-row portrait:flex-col">
+        <div className="m-auto w-3/5 flex justify-around landscape:flex-row portrait:flex-col"> 
           <div className="mt-2 text-[0.5rem] flex flex-col items-center">
-            <span className="text-xs mt-5em"><b></b><b></b>한국 계좌 송금:
+            <span className="text-xs">한국 계좌 송금:
             씨티 2033824526701</span>
           </div>
         </div>
