@@ -54,8 +54,6 @@ export default function Eng() {
             alt="header image"
             width={80}
             height={80}
-            // layout="responsive"
-            // className="w-full h-auto"
           />
         </div>
       </div>

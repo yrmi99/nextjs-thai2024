@@ -28,15 +28,13 @@ export default function Kor() {
   return (
 
     <div className="bg-white max-w-screen-lg w-80% p-5 m-auto border border-[#B3A369] flex flex-col">
-      <div className="flex justify-end">
+      <div className="flex justify-center">
         <div className="flex-shrink-0">
           <Image
-            src="/animationheader-ezgif.com-crop.gif"
+            src="/bunny.gif"
             alt="header image"
-            width={300}
-            height={120}
-            layout="responsive"
-            className="w-full h-auto"
+            width={80}
+            height={80}
           />
         </div>
       </div>
