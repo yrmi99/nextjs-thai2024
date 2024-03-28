@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Thai Mission 2024",
-  description: "Mission Trip to Isaan, Thailand with SOON Global Movement",
+  description: "Mission Trip to Isaan, Thailand, with SOON Global Movement",
 };
 
 export default function RootLayout({
