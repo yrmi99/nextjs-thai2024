@@ -30,17 +30,17 @@ export default function Eng() {
   // Function to get the appropriate suffix for the day
   const getSuffix = (day: number) => {
     if (day >= 11 && day <= 13) {
-      return 'th';
+      return "th";
     }
     switch (day % 10) {
       case 1:
-        return 'st';
+        return "st";
       case 2:
-        return 'nd';
+        return "nd";
       case 3:
-        return 'rd';
+        return "rd";
       default:
-        return 'th';
+        return "th";
     }
   };
 
@@ -72,7 +72,7 @@ export default function Eng() {
       <div className="mt-2">
         <span className="font-bold">Greetings</span><br></br>
         <span>Shalom! This is Yeoram. I hope you are finding boundless joy and peace in the Lord.
-          Following last year's mission trip, I have decided to dedicate a month in my summer break to the work for God's Kingdom. 
+          Following last year&apos;s mission trip, I have decided to dedicate a month in my summer break to the work for God&apos;s Kingdom. 
           I write this letter in hopes that you will support my mission.</span>
       </div>
 
@@ -89,14 +89,14 @@ export default function Eng() {
         <span className="font-bold">What will I do?</span><br></br>
         <span>We will be evangelizing at the Rajabhat University and the Udon Thani College of Agriculture and Technology
           by running English schools. During the third week, we intend to organize an evangelistic event known as 
-          Friend's Night, showcasing skits, praise and K-pop performances, and other engaging activities that has significantly
-          resonated with students' interests and enthusiasm last year.</span>
+          Friend&apos;s Night, showcasing skits, praise and K-pop performances, and other engaging activities that has significantly
+          resonated with students&apos; interests and enthusiasm last year.</span>
       </div>
 
       <div className="mt-2">
         <span className="font-bold">Why am I going?</span><br></br>
-        <span>Having garnered unforgettable memories and friendships by God's grace, 
-          I've spent the past few months seeking His guidance regarding my summer plans. 
+        <span>Having garnered unforgettable memories and friendships by God&apos;s grace, 
+          I&apos;ve spent the past few months seeking His guidance regarding my summer plans. 
           Surprisingly, God closed doors to other options I had considered feasible, instead stirring my heart with 
           a desire to meet the Thai friends again. Believing this to be His calling, I eagerly anticipate sharing the Gospel 
           deeper and seeking to comprehend the divine will that has led me. </span>
@@ -123,12 +123,12 @@ export default function Eng() {
       <div className="mt-12 w-full">
         <span className="font-bold">Please pray with me for...</span><br></br>
         <ol className="list-decimal list-inside mt-2 ml-5">
-          <li>The fulfillment of our team members' financial needs,</li>
+          <li>The fulfillment of our team members&apos; financial needs,</li>
           <li>Joy to prevail amidst challenging weather and surroundings,</li>
           <li>Safety throughout our travels,</li>
           <li>Our team to overflow with compassion, love, and prayer,</li>
           <li>Vigilance against spiritual warfare,</li>
-          <li>The Thai students we'll encounter to embrace Jesus,</li>
+          <li>The Thai students we&apos;ll encounter to embrace Jesus,</li>
           <li>A remarkable spiritual revival in the land of Thailand.</li>
         </ol>
       </div>
@@ -150,77 +150,66 @@ export default function Eng() {
           <div className="text-[0.5rem]">
             <span className="text-xs"><br></br>         How to Donate</span>
             <ol className="text-xs list-decimal list-inside mt-2 ml-5">
-              <li>Click 'GIVE TO THAILAND MISSION'</li>
-              <li>Specify the giving amount and choose 'SM24 (ATL01 - THA) Seo, Yeoram' (2nd to the last) on Purpose </li>
+              <li>Click &apos;GIVE TO THAILAND MISSION&apos;</li>
+              <li>Specify the giving amount and choose &apos;SM24 (ATL01 - THA) Seo, Yeoram&apos; (2nd to the last) on Purpose </li>
               <li>Write down personal informations following the guidance</li>
               <li>Donate via credit card or send money directly from your bank account</li>
-              <li>Click 'Donate Now' and you will be done!</li>
+              <li>Click &apos;Donate Now&apos; and you will be done!</li>
             </ol>
           </div>
         </div>
       </div>
-
-
-
-      {/* <div className="m-auto mt-2 flex justify-around landscape:w-3/5 landscape:flex-row portrait:flex-col text-center">
-        <span className="text-xs">이메일: <a href="mailto:yrsi29382@gmail.com">yrsi29382@gmail.com</a></span>
-        <span className="text-xs">카카오톡: @yeorahm1006</span>
-        <span className="text-xs">인스타그램: @yeoram_seo</span>
-      </div> */}
-
 
       <div className="flex justify-center">
         <div className="flex items-center">
           <Image
             src="/KakaoTalk_20240327_202316980_08.jpg"
             alt="Previous mission picture1"
-            width={165} // Adjust width as needed
-            height={165} // Adjust height as needed
+            width={165}
+            height={165}
             layout="fixed"
           />
           <Image
             src="/KakaoTalk_20240327_202316980_14.jpg"
             alt="Previous mission picture1"
-            width={165} // Adjust width as needed
-            height={165} // Adjust height as needed
+            width={165}
+            height={165} 
             layout="fixed"
-            style={{ marginLeft: "-10px" }} // Overlap by 20px
+            style={{ marginLeft: "-10px" }}
           />
           <Image
             src="/KakaoTalk_20240327_202316980_02.jpg"
             alt="Previous mission picture1"
-            width={165} // Adjust width as needed
-            height={165} // Adjust height as needed
+            width={165}
+            height={165}
             layout="fixed"
-            style={{ marginLeft: "-10px" }} // Overlap by 20px
+            style={{ marginLeft: "-10px" }}
           />
           <Image
             src="/KakaoTalk_20240327_202316980_10.jpg"
             alt="Previous mission picture1"
-            width={165} // Adjust width as needed
-            height={165} // Adjust height as needed
+            width={165}
+            height={165}
             layout="fixed"
-            style={{ marginLeft: "-10px" }} // Overlap by 20px
+            style={{ marginLeft: "-10px" }}
           />
           <Image
             src="/KakaoTalk_20240327_202316980_12.jpg"
             alt="Previous mission picture1"
-            width={165} // Adjust width as needed
-            height={165} // Adjust height as needed
+            width={165}
+            height={165}
             layout="fixed"
-            style={{ marginLeft: "-10px" }} // Overlap by 20px
+            style={{ marginLeft: "-10px" }}
           />
           <Image
             src="/KakaoTalk_20240327_202316980.jpg"
             alt="Previous mission picture1"
-            width={180} // Adjust width as needed
-            height={180} // Adjust height as needed
+            width={180}
+            height={180}
             layout="fixed"
           />
-          {/* Add more images here */}
         </div>
       </div>
-
     </div>
   );
 }

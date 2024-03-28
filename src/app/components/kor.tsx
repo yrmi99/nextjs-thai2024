@@ -125,7 +125,7 @@ export default function Kor() {
             <span className="text-xs"><br></br>         기부 방법</span>
             <ol className="text-xs list-decimal list-inside mt-2 ml-5">
               <li>후원하기 클릭!</li>
-              <li>기부 금액 명시 후, Purpose에서 'SM24 (ATL01 - THA) Seo, Yeoram' 클릭 (하단 2번째) </li>
+              <li>기부 금액 명시 후, Purpose에서 `&apos;`SM24 (ATL01 - THA) Seo, Yeoram`&apos;` 클릭 (하단 2번째) </li>
               <li>안내에 따라 개인정보 작성</li>
               <li>신용카드로 결제 혹은 미국 은행 계좌로 송금</li>
               <li>Donate Now 클릭하면 기부 완료!</li>
@@ -134,67 +134,56 @@ export default function Kor() {
         </div>
       </div>
 
-
-
-      {/* <div className="m-auto mt-2 flex justify-around landscape:w-3/5 landscape:flex-row portrait:flex-col text-center">
-        <span className="text-xs">이메일: <a href="mailto:yrsi29382@gmail.com">yrsi29382@gmail.com</a></span>
-        <span className="text-xs">카카오톡: @yeorahm1006</span>
-        <span className="text-xs">인스타그램: @yeoram_seo</span>
-      </div> */}
-
-
       <div className="flex justify-center">
         <div className="flex items-center">
           <Image
             src="/KakaoTalk_20240327_202316980_08.jpg"
             alt="Previous mission picture1"
-            width={165} // Adjust width as needed
-            height={165} // Adjust height as needed
+            width={165}
+            height={165}
             layout="fixed"
           />
           <Image
             src="/KakaoTalk_20240327_202316980_14.jpg"
             alt="Previous mission picture1"
-            width={165} // Adjust width as needed
-            height={165} // Adjust height as needed
+            width={165}
+            height={165}
             layout="fixed"
-            style={{ marginLeft: "-10px" }} // Overlap by 20px
+            style={{ marginLeft: "-10px" }}
           />
           <Image
             src="/KakaoTalk_20240327_202316980_02.jpg"
             alt="Previous mission picture1"
-            width={165} // Adjust width as needed
-            height={165} // Adjust height as needed
+            width={165}
+            height={165}
             layout="fixed"
-            style={{ marginLeft: "-10px" }} // Overlap by 20px
+            style={{ marginLeft: "-10px" }}
           />
           <Image
             src="/KakaoTalk_20240327_202316980_10.jpg"
             alt="Previous mission picture1"
-            width={165} // Adjust width as needed
-            height={165} // Adjust height as needed
+            width={165}
+            height={165}
             layout="fixed"
-            style={{ marginLeft: "-10px" }} // Overlap by 20px
+            style={{ marginLeft: "-10px" }}
           />
           <Image
             src="/KakaoTalk_20240327_202316980_12.jpg"
             alt="Previous mission picture1"
-            width={165} // Adjust width as needed
-            height={165} // Adjust height as needed
+            width={165}
+            height={165}
             layout="fixed"
-            style={{ marginLeft: "-10px" }} // Overlap by 20px
+            style={{ marginLeft: "-10px" }}
           />
           <Image
             src="/KakaoTalk_20240327_202316980.jpg"
             alt="Previous mission picture1"
-            width={180} // Adjust width as needed
-            height={180} // Adjust height as needed
+            width={180} 
+            height={180}
             layout="fixed"
           />
-          {/* Add more images here */}
         </div>
       </div>
-
     </div>
   );
 }
