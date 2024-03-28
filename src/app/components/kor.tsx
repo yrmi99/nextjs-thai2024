@@ -91,9 +91,9 @@ export default function Kor() {
 
       <div className="mt-12 w-full sm:w-4/5 text-center text-[#4472C4] m-auto border border-b-[#4472C4] border-t-[#4472C4] border-l-white border-r-white">
         <p className="text-xs sm:text-sm">
-        "예수님께서 무리를 보시고 불쌍히 여기시니 이는 그들이 목자 없는 양과 같이 고생하며 기진함이라
+        &quot;예수님께서 무리를 보시고 불쌍히 여기시니 이는 그들이 목자 없는 양과 같이 고생하며 기진함이라
         이에 제자들에게 이르시되 추수할 것은 많되 일꾼이 적으니
-        그러므로 추수하는 주인에게 청하여 추수할 일꾼들을 보내 주소서 하라 하시니라"
+        그러므로 추수하는 주인에게 청하여 추수할 일꾼들을 보내 주소서 하라 하시니라&quot;
         </p>
         <p className="text-xs sm:text-sm">
           &ndash; 마태복음 9장 36절~38절

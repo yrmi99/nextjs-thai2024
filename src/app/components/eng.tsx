@@ -117,12 +117,12 @@ export default function Eng() {
 
       <div className="mt-12 w-full sm:w-4/5 text-center text-[#4472C4] m-auto border border-b-[#4472C4] border-t-[#4472C4] border-l-white border-r-white">
         <p className="text-xs sm:text-sm">
-          "When Jesus saw the crowds, he had compassion on them, because they were harassed and helpless,
+        &quot;When Jesus saw the crowds, he had compassion on them, because they were harassed and helpless,
           like sheep without a shepherd. Then he said to his disciples,
         </p>
         <p className="text-xs sm:text-sm">
           “The harvest is plentiful but the workers are few. Ask the Lord of the harvest,
-          therefore, to send out workers into his harvest field.”"
+          therefore, to send out workers into his harvest field.”&quot;
         </p>
         <p className="text-xs sm:text-sm">
           &ndash; Matthew 9:36&ndash;38
