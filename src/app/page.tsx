@@ -14,10 +14,10 @@ const Home: React.FC = () => {
   };
 
   return (
-    <main className="p-2 text-black text-sm h-screen flex items-center justify-center">
+    <main className="p-2 text-black text-sm h-screen flex items-center justify-center" style={{ background: `url('/header.gif') no-repeat center center fixed`, backgroundSize: `cover` }}>
       {language === "kor" ? <Kor /> : language === "eng" ? <Eng /> : (
         <div>
-          <h1 className="text-center mb-2 text-white">Choose a language      /      언어를 선택하세요</h1>
+          <h1 className="text-center mb-2 text-white">Choose a language / 언어를 선택하세요</h1>
           <div className="flex justify-around">
             <button className="transform transition-transform hover:scale-110 hover:underline text-white" onClick={() => handleLanguageChange("eng")}>English</button>
             <button className="transform transition-transform hover:scale-110 hover:underline text-white" onClick={() => handleLanguageChange("kor")}>한국어</button>

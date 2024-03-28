@@ -47,19 +47,18 @@ export default function Eng() {
   return (
 
     <div className="bg-white max-w-screen-lg w-80% p-5 m-auto border border-[#B3A369] flex flex-col">
-      <div className="flex justify-end">
+      <div className="flex justify-center">
         <div className="flex-shrink-0">
           <Image
-            src="/animationheader-ezgif.com-crop.gif"
+            src="/bunny.gif"
             alt="header image"
-            width={300}
-            height={120}
-            layout="responsive"
-            className="w-full h-auto"
+            width={80}
+            height={80}
+            // layout="responsive"
+            // className="w-full h-auto"
           />
         </div>
       </div>
-
 
       <div className="w-full border border-b-[#B3A369] border-t-[#B3A369] border-l-white border-r-white flex justify-between">
         <span>Mission Trip Prayer Letter</span>
@@ -116,10 +115,20 @@ export default function Eng() {
         Yeoram Seo
       </div>
 
-      <div className="mt-12 w-4/5 text-center text-[#4472C4] m-auto border border-b-[#4472C4] border-t-[#4472C4] border-l-white border-r-white">
-        “이 천국 복음이 모든 민족에게 증언되기 위하여 온 <br></br>
-        세상에 전파되리니 그제야 끝이 오리라” &ndash; 마태복음 24장 14절
+      <div className="mt-12 w-full sm:w-4/5 text-center text-[#4472C4] m-auto border border-b-[#4472C4] border-t-[#4472C4] border-l-white border-r-white">
+        <p className="text-xs sm:text-sm">
+          "When Jesus saw the crowds, he had compassion on them, because they were harassed and helpless,
+          like sheep without a shepherd. Then he said to his disciples,
+        </p>
+        <p className="text-xs sm:text-sm">
+          “The harvest is plentiful but the workers are few. Ask the Lord of the harvest,
+          therefore, to send out workers into his harvest field.”"
+        </p>
+        <p className="text-xs sm:text-sm">
+          &ndash; Matthew 9:36&ndash;38
+        </p>
       </div>
+
 
       <div className="mt-12 w-full">
         <span className="font-bold">Please pray with me for...</span><br></br>
