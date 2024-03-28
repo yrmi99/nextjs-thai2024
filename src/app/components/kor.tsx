@@ -27,7 +27,7 @@ export default function Kor() {
 
   return (
 
-    <div className="bg-white max-w-screen-lg w-80% p-5 m-auto border border-[#B3A369] flex flex-col">
+    <div className="backdrop-blur-lg bg-white dark:bg-transparent dark:bg-opacity-20 dark:text-white last:border-b max-w-screen-lg w-80% p-5 m-auto border border-[#B3A369] flex flex-col">
       <div className="flex justify-center">
         <div className="flex-shrink-0">
           <Image
@@ -131,12 +131,11 @@ export default function Kor() {
           </div>
         </div>
 
-        <div className="m-auto w-3/5 flex justify-around landscape:flex-row portrait:flex-col"> 
-          <div className="mt-2 text-[0.5rem] flex flex-col items-center">
-            <span className="text-xs">한국 계좌 송금:
-            씨티 2033824526701</span>
-          </div>
-        </div>
+        <div className="m-auto w-full sm:w-3/5 flex justify-center landscape:flex-row portrait:flex-col"> 
+  <div className="mt-2 text-[0.5rem] sm:text-xs flex flex-col items-center">
+    <span className="text-xs sm:text-sm">한국 계좌 송금: 씨티 2033824526701</span>
+  </div>
+</div>
         
         <div className="flex flex-col sm:flex-row justify-center mt-4 sm:mt-6"> {/* Increased margin top */}
           <div className="mr-0 sm:mr-8 text-[0.5rem] sm:text-sm flex flex-col items-center sm:text-center">
