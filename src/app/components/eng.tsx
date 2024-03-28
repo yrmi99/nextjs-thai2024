@@ -46,7 +46,7 @@ export default function Eng() {
 
   return (
 
-    <div className="backdrop-blur-lg bg-white dark:bg-black last:border-b max-w-screen-lg w-80% p-5 m-auto border border-[#B3A369] flex flex-col">
+    <div className="backdrop-blur-lg bg-white dark:bg-black dark:text-white last:border-b max-w-screen-lg w-80% p-5 m-auto border border-[#B3A369] flex flex-col">
       <div className="flex justify-center">
         <div className="flex-shrink-0">
           <Image
