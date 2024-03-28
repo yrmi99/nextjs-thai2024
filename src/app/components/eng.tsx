@@ -150,11 +150,11 @@ export default function Eng() {
           <div className="text-[0.5rem] sm:text-xs">
             <span className="text-xs sm:text-sm">How to Donate</span>
             <ol className="text-xs xs:text-xs list-decimal list-inside mt-2 ml-0 sm:ml-5">
-              <li>Click 'GIVE TO THAILAND MISSION'</li>
-              <li>Specify the giving amount and choose 'SM24 (ATL01 - THA) Seo, Yeoram' (2nd to the last) on Purpose</li>
+              <li>Click &apos;GIVE TO THAILAND MISSION&apos;</li>
+              <li>Specify the giving amount and choose &apos;SM24 (ATL01 - THA) Seo, Yeoram&apos; (2nd to the last) on Purpose</li>
               <li>Write down personal information</li>
               <li>Donate via credit card or send money directly from your bank account</li>
-              <li>Click 'Donate Now' and you will be done!</li>
+              <li>Click &apos;Donate Now&apos; and you will be done!</li>
             </ol>
           </div>
         </div>

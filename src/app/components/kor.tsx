@@ -125,7 +125,7 @@ export default function Kor() {
             <span className="text-xs"><b></b><b></b>기부 방법</span>
             <ol className="text-xs list-decimal list-inside mt-2 ml-5">
               <li>후원하기 클릭!</li>
-              <li>기부 금액 명시 후, Purpose에서 'SM24 (ATL01 - THA) Seo, Yeoram' 클릭 (하단 2번째)</li>
+              <li>기부 금액 명시 후, Purpose에서 &apos;SM24 (ATL01 - THA) Seo, Yeoram&apos; 클릭 (하단 2번째)</li>
               <li>안내에 따라 개인정보 작성</li>
               <li>신용카드로 결제 혹은 미국 은행 계좌로 송금</li>
               <li>Donate Now 클릭하면 기부 완료!</li>
