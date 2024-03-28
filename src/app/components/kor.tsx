@@ -39,7 +39,7 @@ export default function Kor() {
         </div>
       </div>
 
-      <div className="w-full border border-b-[#B3A369] border-t-[#B3A369] border-l-white border-r-white flex justify-between">
+      <div className="w-full border border-b-[#B3A369] border-t-[#B3A369] border-l-transparent border-r-transparent flex justify-between">
         <span>선교 모금 편지</span>
         <span>{currentDate}</span>
       </div>
@@ -87,7 +87,7 @@ export default function Kor() {
         서여람 드림
       </div>
 
-      <div className="mt-12 w-full sm:w-4/5 text-center text-[#4472C4] m-auto border border-b-[#4472C4] border-t-[#4472C4] border-l-white border-r-white">
+      <div className="mt-12 w-full sm:w-4/5 text-center text-[#4472C4] m-auto border border-b-[#4472C4] border-t-[#4472C4] border-l-transparent border-r-transparent">
         <p className="text-xs sm:text-sm">
         &quot;예수님께서 무리를 보시고 불쌍히 여기시니 이는 그들이 목자 없는 양과 같이 고생하며 기진함이라
         이에 제자들에게 이르시되 추수할 것은 많되 일꾼이 적으니
@@ -133,7 +133,7 @@ export default function Kor() {
 
         <div className="m-auto w-full sm:w-3/5 flex justify-center landscape:flex-row portrait:flex-col"> 
   <div className="mt-2 text-[0.5rem] sm:text-xs flex flex-col items-center">
-    <span className="text-xs sm:text-sm">한국 계좌 송금: 씨티 2033824526701</span>
+    <span className="text-xs xs:text-xs">한국 계좌 송금: 씨티 2033824526701</span>
   </div>
 </div>
         
