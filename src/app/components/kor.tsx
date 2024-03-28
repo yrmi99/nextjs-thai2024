@@ -33,8 +33,8 @@ export default function Kor() {
           <Image
             src="/animationheader-ezgif.com-crop.gif"
             alt="header image"
-            width={500}
-            height={200}
+            width={300}
+            height={120}
             layout="responsive"
             className="w-full h-auto"
           />

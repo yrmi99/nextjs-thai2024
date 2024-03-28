@@ -52,13 +52,14 @@ export default function Eng() {
           <Image
             src="/animationheader-ezgif.com-crop.gif"
             alt="header image"
-            width={500}
-            height={200}
+            width={300}
+            height={120}
             layout="responsive"
             className="w-full h-auto"
           />
         </div>
       </div>
+
 
       <div className="w-full border border-b-[#B3A369] border-t-[#B3A369] border-l-white border-r-white flex justify-between">
         <span>Mission Trip Prayer Letter</span>
@@ -160,54 +161,57 @@ export default function Eng() {
         </div>
       </div>
 
-      <div className="flex justify-center">
-        <div className="flex items-center">
-          <Image
-            src="/KakaoTalk_20240327_202316980_08.jpg"
-            alt="Previous mission picture1"
-            width={165}
-            height={165}
-            layout="fixed"
-          />
-          <Image
-            src="/KakaoTalk_20240327_202316980_14.jpg"
-            alt="Previous mission picture1"
-            width={165}
-            height={165} 
-            layout="fixed"
-            style={{ marginLeft: "-10px" }}
-          />
-          <Image
-            src="/KakaoTalk_20240327_202316980_02.jpg"
-            alt="Previous mission picture1"
-            width={165}
-            height={165}
-            layout="fixed"
-            style={{ marginLeft: "-10px" }}
-          />
-          <Image
-            src="/KakaoTalk_20240327_202316980_10.jpg"
-            alt="Previous mission picture1"
-            width={165}
-            height={165}
-            layout="fixed"
-            style={{ marginLeft: "-10px" }}
-          />
-          <Image
-            src="/KakaoTalk_20240327_202316980_12.jpg"
-            alt="Previous mission picture1"
-            width={165}
-            height={165}
-            layout="fixed"
-            style={{ marginLeft: "-10px" }}
-          />
-          <Image
-            src="/KakaoTalk_20240327_202316980.jpg"
-            alt="Previous mission picture1"
-            width={180}
-            height={180}
-            layout="fixed"
-          />
+      <div className="mt-6"> {/* Increased margin top */}
+        <div className="flex justify-center overflow-x-auto">
+          <div className="flex items-center">
+            <Image
+              src="/KakaoTalk_20240327_202316980_08.jpg"
+              alt="Previous mission picture1"
+              width={160}
+              height={160}
+              layout="fixed"
+            />
+            <Image
+              src="/KakaoTalk_20240327_202316980_14.jpg"
+              alt="Previous mission picture1"
+              width={160}
+              height={160}
+              layout="fixed"
+              className="ml-4 sm:ml-0"
+            />
+            <Image
+              src="/KakaoTalk_20240327_202316980_02.jpg"
+              alt="Previous mission picture1"
+              width={160}
+              height={160}
+              layout="fixed"
+              className="ml-4 sm:ml-0"
+            />
+            <Image
+              src="/KakaoTalk_20240327_202316980_10.jpg"
+              alt="Previous mission picture1"
+              width={160}
+              height={160}
+              layout="fixed"
+              className="ml-4 sm:ml-0"
+            />
+            <Image
+              src="/KakaoTalk_20240327_202316980_12.jpg"
+              alt="Previous mission picture1"
+              width={160}
+              height={160}
+              layout="fixed"
+              className="ml-4 sm:ml-0"
+            />
+            <Image
+              src="/KakaoTalk_20240327_202316980.jpg"
+              alt="Previous mission picture1"
+              width={160}
+              height={160}
+              layout="fixed"
+              className="ml-4 sm:ml-0"
+            />
+          </div>
         </div>
       </div>
     </div>
