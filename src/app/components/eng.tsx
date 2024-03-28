@@ -28,7 +28,7 @@ export default function Eng() {
   }, []);
 
   // Function to get the appropriate suffix for the day
-  const getSuffix = (day) => {
+  const getSuffix = (day: number) => {
     if (day >= 11 && day <= 13) {
       return 'th';
     }
@@ -152,7 +152,7 @@ export default function Eng() {
             <ol className="text-xs list-decimal list-inside mt-2 ml-5">
               <li>Click 'GIVE TO THAILAND MISSION'</li>
               <li>Specify the giving amount and choose 'SM24 (ATL01 - THA) Seo, Yeoram' (2nd to the last) on Purpose </li>
-              <li>Write down personal informations</li>
+              <li>Write down personal informations following the guidance</li>
               <li>Donate via credit card or send money directly from your bank account</li>
               <li>Click 'Donate Now' and you will be done!</li>
             </ol>
