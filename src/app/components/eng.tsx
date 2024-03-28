@@ -46,7 +46,7 @@ export default function Eng() {
 
   return (
 
-    <div className="bg-white max-w-screen-lg w-80% p-5 m-auto border border-[#B3A369] flex flex-col">
+    <div className="backdrop-blur-lg bg-white dark:bg-black last:border-b max-w-screen-lg w-80% p-5 m-auto border border-[#B3A369] flex flex-col">
       <div className="flex justify-center">
         <div className="flex-shrink-0">
           <Image
@@ -58,7 +58,7 @@ export default function Eng() {
         </div>
       </div>
 
-      <div className="w-full border border-b-[#B3A369] border-t-[#B3A369] border-l-white border-r-white flex justify-between">
+      <div className="w-full border border-b-[#B3A369] border-t-[#B3A369] flex justify-between">
         <span>Mission Trip Prayer Letter</span>
         <span>{currentDate}</span>
       </div>
@@ -113,7 +113,7 @@ export default function Eng() {
         Yeoram Seo
       </div>
 
-      <div className="mt-12 w-full sm:w-4/5 text-center text-[#4472C4] m-auto border border-b-[#4472C4] border-t-[#4472C4] border-l-white border-r-white">
+      <div className="mt-12 w-full sm:w-4/5 text-center text-[#4472C4] m-auto border border-b-[#4472C4] border-t-[#4472C4]">
         <p className="text-xs sm:text-sm">
         &quot;When Jesus saw the crowds, he had compassion on them, because they were harassed and helpless,
           like sheep without a shepherd. Then he said to his disciples,
@@ -145,28 +145,43 @@ export default function Eng() {
         <div className="flex justify-center">
           <span className="font-bold text-sm sm:text-base">Please support my mission by donating!</span>
         </div>
-        
-        <div className="flex flex-col justify-center items-center mt-2 sm:flex-row sm:justify-center">
-          <div className="mr-0 mb-4 sm:mr-8 text-[0.5rem] sm:text-xs flex flex-col items-center sm:text-center">
-            <span className="text-xs sm:text-sm">Click me!</span>
-            <a href="https://give.smglobal.org/atlanta/">
-              <Image src="/qr code.png" alt="QR Code" width={150} height={150} layout="fixed" />
-            </a>
-            <span className="text-xs xs:text-xs mt-1">Will direct you to the official website.</span>
-          </div>
+        <div className="flex justify-center">
+          <span className="font-medium text-xs xs:text-base text-center">Target fundraising amount is $4,800. 
+          I sincerely appreciate your holy giving.</span>
+        </div>
 
-          <div className="text-[0.5rem] sm:text-xs">
-            <span className="text-xs sm:text-sm">How to Donate</span>
-            <ol className="text-xs xs:text-xs list-decimal list-inside mt-2 ml-0 sm:ml-5">
-              <li>Click &apos;GIVE TO THAILAND MISSION&apos;</li>
-              <li>Specify the giving amount and choose &apos;SM24 (ATL01 - THA) Seo, Yeoram&apos; (2nd to the last) on Purpose</li>
-              <li>Write down personal information</li>
-              <li>Donate via credit card or send money directly from your bank account</li>
-              <li>Click &apos;Donate Now&apos; and you will be done!</li>
-            </ol>
+        <div className="m-auto w-3/5 flex justify-around landscape:flex-row portrait:flex-col">
+          <div className="mt-2 text-[0.5rem] flex flex-col items-center">
+            <span className="text-sm mt-2em">Donate via Zelle</span>
+            <span className="text-xs mt-2em">Click me!</span>
+            <a href="https://enroll.zellepay.com/qr-codes?data=eyJuYW1lIjoiWUVPUkFNIiwiYWN0aW9uIjoicGF5bWVudCIsInRva2VuIjoieXJzaTI5MzgyQGdtYWlsLmNvbSJ9">
+              <Image src="/zelleqr.jpg" alt="QR Code, Zelle" width={150} height={150} layout="fixed" />
+            </a>
+            <span>You must scan from your banking app.</span>
           </div>
         </div>
-      </div>
+
+          <div className="flex flex-col justify-center items-center mt-2 sm:flex-row sm:justify-center">
+            <div className="mr-0 mb-4 sm:mr-8 text-[0.5rem] sm:text-xs flex flex-col items-center sm:text-center">
+              <span className="text-sm mt-1em">Official website</span>
+              <span className="text-xs xs:text-xs mt-1">Click me!</span>
+              <a href="https://give.smglobal.org/atlanta/">
+                <Image src="/qr code.png" alt="QR Code" width={150} height={150} layout="fixed" />
+              </a>
+            </div>
+
+            <div className="text-[0.5rem] sm:text-xs">
+              <span className="text-xs sm:text-sm">How to Donate</span>
+              <ol className="text-xs xs:text-xs list-decimal list-inside mt-2 ml-0 sm:ml-5">
+                <li>Click 'GIVE TO THAILAND MISSION'</li>
+                <li>Specify the giving amount and choose 'SM24 (ATL01 - THA) Seo, Yeoram' (2nd to the last) on Purpose</li>
+                <li>Write down personal information</li>
+                <li>Donate via credit card or send money directly from your bank account</li>
+                <li>Click 'Donate Now' and you will be done!</li>
+              </ol>
+            </div>
+          </div>
+        </div>
 
       <div className="mt-6"> {/* Increased margin top */}
         <div className="flex justify-center overflow-x-auto">

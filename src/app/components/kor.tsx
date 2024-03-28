@@ -115,14 +115,36 @@ export default function Kor() {
         <div className="flex justify-center">
           <span className="font-bold text-sm sm:text-base">기부로 제 선교를 지원해주세요!</span>
         </div>
+        <div className="flex justify-center">
+          <span className="font-medium text-xs xs:text-base text-center">목표 모금액은 $4,800, 한화 650만원입니다. 
+          하나님의 거룩한 사역에 동참해주세요!</span>
+        </div>
+
+        <div className="m-auto w-3/5 flex justify-around landscape:flex-row portrait:flex-col">
+          <div className="mt-2 text-[0.5rem] flex flex-col items-center">
+            <span className="text-sm mt-2em">Zelle로 계좌 송금</span>
+            <span className="text-xs mt-2em">Click me!</span>
+            <a href="https://enroll.zellepay.com/qr-codes?data=eyJuYW1lIjoiWUVPUkFNIiwiYWN0aW9uIjoicGF5bWVudCIsInRva2VuIjoieXJzaTI5MzgyQGdtYWlsLmNvbSJ9">
+              <Image src="/zelleqr.jpg" alt="QR Code, Zelle" width={150} height={150} layout="fixed" />
+            </a>
+            <span className="text-xs">enrolled as YEORAM SEO</span>
+          </div>
+        </div>
+
+        <div className="m-auto w-3/5 flex justify-around landscape:flex-row portrait:flex-col">
+          <div className="mt-2 text-[0.5rem] flex flex-col items-center">
+            <span className="text-xs mt-5em"><b></b><b></b>한국 계좌 송금:
+            씨티 2033824526701</span>
+          </div>
+        </div>
         
         <div className="flex flex-col sm:flex-row justify-center mt-4 sm:mt-6"> {/* Increased margin top */}
           <div className="mr-0 sm:mr-8 text-[0.5rem] sm:text-sm flex flex-col items-center sm:text-center">
-            <span className="text-xs">Click me!</span>
+            <span className="text-sm mt-2em">공식 웹사이트</span>
+            <span className="text-xs mt-2em">Click me!</span>
             <a href="https://give.smglobal.org/atlanta/">
               <Image src="/qr code.png" alt="QR Code" width={150} height={150} layout="fixed" />
             </a>
-            <span className="text-xs mt-2">해당 웹사이트로 이동됩니다.</span>
           </div>
 
           <div className="text-[0.5rem] sm:text-sm mt-4 sm:mt-0"> {/* Increased margin top */}
