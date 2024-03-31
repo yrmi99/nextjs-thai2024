@@ -80,7 +80,7 @@ export default function Eng() {
           with my college missionary organization SOON Movement Global (an affiliate of ICCC). 
           Thailand boasts a population where 93% identify as Buddhists, leaving only 1% who are Christians.
           Regrettably, the nation faces pressing needs for evangelization, particularly due to the escalating rates 
-          of drug trafficking and transgender issues.</span>
+          of drug trafficking.</span>
       </div>
 
       <div className="mt-2">
