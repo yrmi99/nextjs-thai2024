@@ -1,12 +1,17 @@
 
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 export default function Eng() {
   const [currentDate, setCurrentDate] = useState('');
+  const [remainingDays, setRemainingDays] = useState(0);
 
   useEffect(() => {
-    // Function to update the current date
+    // Define the due date
+    const dueDate = new Date('May 31, 2024');
+
+    // Function to update the current date and remaining days
     const updateDate = () => {
       const dateObj = new Date();
       const year = dateObj.getFullYear();
@@ -15,12 +20,17 @@ export default function Eng() {
       const suffix = getSuffix(day); // Function to get the appropriate suffix
 
       setCurrentDate(`${month} ${day}${suffix}, ${year}`);
+
+      // Calculate remaining days
+      const differenceInTime = dueDate.getTime() - dateObj.getTime();
+      const remainingDays = Math.ceil(differenceInTime / (1000 * 3600 * 24));
+      setRemainingDays(remainingDays);
     };
 
     // Update date initially
     updateDate();
 
-    // Update date every minute
+    // Update date and remaining days every minute
     const interval = setInterval(updateDate, 60000);
 
     // Clear interval on component unmount
@@ -49,12 +59,14 @@ export default function Eng() {
     <div className="backdrop-blur-lg bg-white dark:bg-transparent dark:bg-opacity-20 dark:text-white last:border-b max-w-screen-lg w-80% p-5 m-auto border border-[#B3A369] flex flex-col">
       <div className="flex justify-center">
         <div className="flex-shrink-0">
-          <Image
-            src="/bunny.gif"
-            alt="header image"
-            width={80}
-            height={80}
-          />
+          <Link href="/trackfundraising">
+            <Image
+              src="/bunny.gif"
+              alt="header image"
+              width={80}
+              height={80}
+            />
+          </Link>
         </div>
       </div>
 
@@ -143,16 +155,28 @@ export default function Eng() {
 
       <div className="mt-8 sm:mt-12">
         <div className="flex justify-center">
-          <span className="font-bold text-sm sm:text-base">Please support my mission by donating!</span>
+          <span className="font-bold text-sm sm:text-base">Please join the mission by donating!</span>
         </div>
         <div className="flex justify-center">
-          <span className="font-medium text-xs xs:text-base text-center">Target fundraising amount is $4,800. 
-          Please join me in the journey of glorifying God.</span>
+          <span className="font-medium text-sm sm:text-base text-center text-[#e88247]">Target fundraising amount: $4,900</span>
+        </div>
+        <div className="flex justify-center">
+          <span className="font-medium text-sm sm:text-base text-center text-[#e88247]">
+            Progress: 7.05% ($338.31)
+          </span>
+        </div>
+        <div className="flex justify-center">
+          <span className="font-medium text-xs xs:text-base text-center text-[#e88247]">
+            {remainingDays > 0
+              ? ` ${remainingDays} ${remainingDays === 1 ? 'day' : 'days'} remaining.`
+              : ' Due date has passed.'
+            }
+          </span>
         </div>
 
         <div className="m-auto w-3/5 flex justify-around landscape:flex-row portrait:flex-col">
           <div className="mt-2 text-[0.5rem] flex flex-col items-center">
-            <span className="text-sm mt-2em">Donate via Zelle</span>
+            <span className="text-xs mt-2em">Donate via Zelle</span>
             <span className="text-xs mt-2em">Click me!</span>
             <a href="https://enroll.zellepay.com/qr-codes?data=eyJuYW1lIjoiWUVPUkFNIiwiYWN0aW9uIjoicGF5bWVudCIsInRva2VuIjoieXJzaTI5MzgyQGdtYWlsLmNvbSJ9">
               <Image src="/zelleqr.jpg" alt="QR Code, Zelle" width={150} height={150} layout="fixed" />

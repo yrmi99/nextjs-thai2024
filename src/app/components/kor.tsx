@@ -2,28 +2,56 @@
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
-export default function Kor() {
+export default function Eng() {
   const [currentDate, setCurrentDate] = useState('');
+  const [remainingDays, setRemainingDays] = useState(0);
 
   useEffect(() => {
-    // Function to update the current date
+    // Define the due date
+    const dueDate = new Date('May 31, 2024');
+
+    // Function to update the current date and remaining days
     const updateDate = () => {
       const dateObj = new Date();
       const year = dateObj.getFullYear();
-      const month = dateObj.getMonth() + 1;
+      const month = dateObj.toLocaleString('default', { month: 'long' }); // Get the full name of the month
       const day = dateObj.getDate();
-      setCurrentDate(`${year}년 ${month}월 ${day}일`);
+      const suffix = getSuffix(day); // Function to get the appropriate suffix
+
+      setCurrentDate(`${month} ${day}${suffix}, ${year}`);
+
+      // Calculate remaining days
+      const differenceInTime = dueDate.getTime() - dateObj.getTime();
+      const remainingDays = Math.ceil(differenceInTime / (1000 * 3600 * 24));
+      setRemainingDays(remainingDays);
     };
 
     // Update date initially
     updateDate();
 
-    // Update date every minute
+    // Update date and remaining days every minute
     const interval = setInterval(updateDate, 60000);
 
     // Clear interval on component unmount
     return () => clearInterval(interval);
   }, []);
+
+  // Function to get the appropriate suffix for the day
+  const getSuffix = (day: number) => {
+    if (day >= 11 && day <= 13) {
+      return "th";
+    }
+    switch (day % 10) {
+      case 1:
+        return "st";
+      case 2:
+        return "nd";
+      case 3:
+        return "rd";
+      default:
+        return "th";
+    }
+  };
 
   return (
 
@@ -114,16 +142,30 @@ export default function Kor() {
 
       <div className="mt-6 sm:mt-12">
         <div className="flex justify-center">
-          <span className="font-bold text-sm sm:text-base">기부로 제 선교를 지원해주세요!</span>
+          <span className="font-bold text-sm sm:text-base">기부로 하나님의 사역에 동참해주세요!</span>
         </div>
         <div className="flex justify-center">
-          <span className="font-medium text-xs xs:text-base text-center">목표 모금액은 $4,800, 한화 650만원입니다. 
-          하나님의 거룩한 사역에 동참해주세요!</span>
+          <span className="font-medium text-sm sm:text-base text-center text-[#e88247]">목표 모금액: $4,900 (한화 665만원)</span>
         </div>
+        <div className="flex justify-center">
+          <span className="font-medium text-sm sm:text-base text-center text-[#e88247]">
+            진행 상황: 7.05% ($338.31)
+          </span>
+        </div>
+        <div className="flex justify-center">
+          <span className="font-medium text-xs xs:text-base text-center text-[#e88247]">
+            {remainingDays > 0
+              ? `마감기한 D-${remainingDays}`
+              : '모금 기간이 지났습니다.'
+            }
+            {' '}
+          </span>
+        </div>
+        <div>' '</div>
 
         <div className="m-auto w-3/5 flex justify-around landscape:flex-row portrait:flex-col">
           <div className="mt-2 text-[0.5rem] flex flex-col items-center">
-            <span className="text-sm mt-3em">Zelle로 계좌 송금</span>
+            <span className="text-xs mt-3em">Zelle로 계좌 송금</span>
             <span className="text-xs mt-2em">Click me!</span>
             <a href="https://enroll.zellepay.com/qr-codes?data=eyJuYW1lIjoiWUVPUkFNIiwiYWN0aW9uIjoicGF5bWVudCIsInRva2VuIjoieXJzaTI5MzgyQGdtYWlsLmNvbSJ9">
               <Image src="/zelleqr.jpg" alt="QR Code, Zelle" width={150} height={150} layout="fixed" />
