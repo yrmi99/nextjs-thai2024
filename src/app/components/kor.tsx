@@ -153,9 +153,9 @@ export default function Eng() {
           </span>
         </div>
         <div className="flex justify-center">
-          <span className="font-medium text-xs xs:text-base text-center text-[#e88247]">
+          <span className="font-medium text-xs xs:text-base text-center">
             {remainingDays > 0
-              ? `마감기한 D-${remainingDays}`
+              ? `마감기한까지 ${remainingDays}일 남았어요`
               : '모금 기간이 지났습니다.'
             }
             {' '}

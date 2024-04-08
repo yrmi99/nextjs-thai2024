@@ -166,7 +166,7 @@ export default function Eng() {
           </span>
         </div>
         <div className="flex justify-center">
-          <span className="font-medium text-xs xs:text-base text-center text-[#e88247]">
+          <span className="font-medium text-xs xs:text-base text-center">
             {remainingDays > 0
               ? ` ${remainingDays} ${remainingDays === 1 ? 'day' : 'days'} remaining.`
               : ' Due date has passed.'
