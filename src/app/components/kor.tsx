@@ -161,7 +161,7 @@ export default function Eng() {
             {' '}
           </span>
         </div>
-        <div>' '</div>
+        <div>&apos; &apos;</div>
 
         <div className="m-auto w-3/5 flex justify-around landscape:flex-row portrait:flex-col">
           <div className="mt-2 text-[0.5rem] flex flex-col items-center">
