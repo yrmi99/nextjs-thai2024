@@ -162,7 +162,7 @@ export default function Eng() {
         </div>
         <div className="flex justify-center">
           <span className="font-medium text-sm sm:text-base text-center text-[#e88247]">
-            Progress: 7.99% ($391.64)
+            Progress: 10.44% ($511.64)
           </span>
         </div>
         <div className="flex justify-center">
