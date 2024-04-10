@@ -13,12 +13,15 @@ export default function Eng() {
     // Function to update the current date and remaining days
     const updateDate = () => {
       const dateObj = new Date();
-      const year = dateObj.getFullYear();
-      const month = dateObj.toLocaleString('default', { month: 'long' }); // Get the full name of the month
-      const day = dateObj.getDate();
-      const suffix = getSuffix(day); // Function to get the appropriate suffix
+      const year = dateObj.getFullYear() + "년";
+      const month = (dateObj.getMonth() + 1) + "월"; // Adding 1 because getMonth returns zero-based month
+      const day = dateObj.getDate() + "일";
+      const suffix = getSuffix(dateObj.getDate()); // Function to get the appropriate suffix
 
-      setCurrentDate(`${month} ${day}${suffix}, ${year}`);
+      setCurrentDate(`${year} ${month} ${day}`);
+
+      // Define the due date
+      const dueDate = new Date('May 31, 2024');
 
       // Calculate remaining days
       const differenceInTime = dueDate.getTime() - dateObj.getTime();
