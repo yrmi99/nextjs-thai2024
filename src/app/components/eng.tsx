@@ -97,8 +97,8 @@ export default function Eng() {
 
       <div className="mt-2">
         <span className="font-bold">What will I do?</span><br></br>
-        <span>We will be evangelizing at the Rajabhat University and the Udon Thani College of Agriculture and Technology
-          by running English schools. During the third week, we intend to organize an evangelistic event known as 
+        <span>We will be evangelizing at the Rajabhat University by running English schools. 
+          During the third week, we intend to organize an evangelistic event known as 
           Friend&apos;s Night, showcasing skits, praise and K-pop performances, and other engaging activities that has significantly
           resonated with students&apos; interests and enthusiasm last year.</span>
       </div>
