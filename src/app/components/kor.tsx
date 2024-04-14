@@ -152,7 +152,7 @@ export default function Eng() {
         </div>
         <div className="flex justify-center">
           <span className="font-medium text-sm sm:text-base text-center text-[#e88247]">
-            진행 상황: 10.44% ($511.64)
+            진행 상황: 14.1% ($691.64)
           </span>
         </div>
         <div className="flex justify-center">
@@ -161,7 +161,6 @@ export default function Eng() {
               ? `마감기한까지 ${remainingDays}일 남았어요`
               : '모금 기간이 지났습니다.'
             }
-            {' '}
           </span>
         </div>
         <div>&apos; &apos;</div>
