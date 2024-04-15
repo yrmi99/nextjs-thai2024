@@ -152,7 +152,7 @@ export default function Eng() {
         </div>
         <div className="flex justify-center">
           <span className="font-medium text-sm sm:text-base text-center text-[#e88247]">
-            진행 상황: 18.02% ($883.01)
+            진행 상황: 22.1% ($1083.01)
           </span>
         </div>
         <div className="flex justify-center">
